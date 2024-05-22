@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4077611690894074171}
   - component: {fileID: 2918283673514550624}
   - component: {fileID: 2126620592424127963}
+  - component: {fileID: 3327857330382302680}
   m_Layer: 0
   m_Name: Forest_07
   m_TagString: Untagged
@@ -172,3 +173,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1176221, y: 1.4406179}
   m_EdgeRadius: 0
+--- !u!114 &3327857330382302680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218481864634876664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4025952af2dd05244b4a642dd71745d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 0
+  damage: 0
+  attackSpeed: 0
+  speed: 0
+  lifeTime: 0
+  cost: 0
+  manacost: 0
+  countOfUnits: 0

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8100003859297213098}
   - component: {fileID: 3787507170353527727}
   - component: {fileID: 7350177148405556236}
+  - component: {fileID: 7389365260917123337}
   m_Layer: 0
   m_Name: Gueirreiro (1)
   m_TagString: Untagged
@@ -172,3 +173,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3423157, y: 1.7214909}
   m_EdgeRadius: 0
+--- !u!114 &7389365260917123337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7789621423598394546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4025952af2dd05244b4a642dd71745d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 0
+  damage: 0
+  attackSpeed: 0
+  speed: 0
+  lifeTime: 0
+  cost: 0
+  manacost: 0
+  countOfUnits: 0

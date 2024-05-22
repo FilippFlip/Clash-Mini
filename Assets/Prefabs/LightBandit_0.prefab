@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4434474357299776181}
   - component: {fileID: -5917143858933848924}
   - component: {fileID: 8155621785670898016}
+  - component: {fileID: 4310270636734500306}
   m_Layer: 0
   m_Name: LightBandit_0
   m_TagString: Untagged
@@ -194,3 +195,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFriendly: 1
+--- !u!114 &4310270636734500306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7516670377356315969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4025952af2dd05244b4a642dd71745d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 0
+  damage: 0
+  attackSpeed: 0
+  speed: 0
+  lifeTime: 0
+  cost: 0
+  manacost: 0
+  countOfUnits: 0

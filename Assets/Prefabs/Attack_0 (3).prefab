@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6800368067518105567}
   - component: {fileID: 8117671208444952476}
   - component: {fileID: 5633065166349509001}
+  - component: {fileID: -1260657920453551396}
   m_Layer: 0
   m_Name: Attack_0 (3)
   m_TagString: Untagged
@@ -172,3 +173,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.463495, y: 0.5128523}
   m_EdgeRadius: 0
+--- !u!114 &-1260657920453551396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040308631600114930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4025952af2dd05244b4a642dd71745d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 0
+  damage: 0
+  attackSpeed: 0
+  speed: 0
+  lifeTime: 0
+  cost: 0
+  manacost: 0
+  countOfUnits: 0

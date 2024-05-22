@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4897203381641340842}
   - component: {fileID: 9103985680014296968}
   - component: {fileID: 4620032703861270362}
+  - component: {fileID: 4429272126214227633}
   m_Layer: 0
   m_Name: Desert_02
   m_TagString: Untagged
@@ -172,3 +173,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6653148, y: 1.735532}
   m_EdgeRadius: 0
+--- !u!114 &4429272126214227633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5640539999120881616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4025952af2dd05244b4a642dd71745d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 0
+  damage: 0
+  attackSpeed: 0
+  speed: 0
+  lifeTime: 0
+  cost: 0
+  manacost: 0
+  countOfUnits: 0

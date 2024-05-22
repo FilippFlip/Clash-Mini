@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5675434594628744448}
   - component: {fileID: 38873404335219520}
   - component: {fileID: 1694915158322039966}
+  - component: {fileID: 167144172803796642}
   m_Layer: 0
   m_Name: Skeleton 1
   m_TagString: Untagged
@@ -172,3 +173,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.52655125, y: 0.59499216}
   m_EdgeRadius: 0
+--- !u!114 &167144172803796642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8835096081519600424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4025952af2dd05244b4a642dd71745d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 0
+  damage: 0
+  attackSpeed: 0
+  speed: 0
+  lifeTime: 0
+  cost: 0
+  manacost: 0
+  countOfUnits: 0
