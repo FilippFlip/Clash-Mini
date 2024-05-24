@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UnitStats : MonoBehaviour
 {
@@ -12,5 +13,18 @@ public class UnitStats : MonoBehaviour
     public int cost;
     public int manacost;
     public int countOfUnits;
-   
+
+    private int currentHP;
+    private Slider hpSlider;
+    private void Start()
+    {        
+        hpSlider = GetComponentInChildren<Slider>();
+        currentHP = maxHP;
+        hpSlider.value = (float)currentHP / (float) maxHP;
+    }
+    public void TakeDamage(int damage)
+    {
+        currentHP = Mathf.Clamp(currentHP - damage, 0, maxHP);
+        hpSlider.value = (float)currentHP / (float)maxHP;
+    }
 }
