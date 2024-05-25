@@ -341,6 +341,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: King
       objectReference: {fileID: 0}
+    - target: {fileID: 1706195550203358444, guid: 3fe5daa8a398b364297b746bc4e95ef9, type: 3}
+      propertyPath: maxHP
+      value: 240
+      objectReference: {fileID: 0}
     - target: {fileID: 2488062154322144683, guid: 3fe5daa8a398b364297b746bc4e95ef9, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

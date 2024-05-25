@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +15,8 @@ public class UnitStats : MonoBehaviour
     public int manacost;
     public int countOfUnits;
 
+    public event Action OnDeath;
+
     private int currentHP;
     private Slider hpSlider;
     private void Start()
@@ -26,5 +29,10 @@ public class UnitStats : MonoBehaviour
     {
         currentHP = Mathf.Clamp(currentHP - damage, 0, maxHP);
         hpSlider.value = (float)currentHP / (float)maxHP;
+        if(currentHP == 0)
+        {
+            OnDeath?.Invoke();
+        }
+        
     }
 }

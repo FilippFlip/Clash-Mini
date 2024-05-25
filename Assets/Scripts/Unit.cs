@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class Unit : MonoBehaviour
 {
@@ -10,7 +11,8 @@ public class Unit : MonoBehaviour
     private Animator animator;
     private Rigidbody2D rb;
     private float attackTimer;
-    private void Start()
+    private HashSet<Unit> availableTargets = new HashSet<Unit>(); 
+    private void Awake()
     {
         moveDirection = isFriendly ? Vector3.right : Vector3.left;
         if(moveDirection.x < 0)
@@ -20,6 +22,14 @@ public class Unit : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();    
         animator = GetComponent<Animator>();
         stats = GetComponent<UnitStats>();
+    }
+    private void OnEnable()
+    {
+        stats.OnDeath += Death;
+    }
+    private void OnDisable()
+    {
+        stats.OnDeath -= Death;
     }
     void FixedUpdate()
     {
@@ -31,9 +41,18 @@ public class Unit : MonoBehaviour
     }
     private void Move()
     {
+        if (state == UnitState.Dying)
+            return;
+        state = availableTargets.Count > 0?UnitState.Attacking : UnitState.Moving;
         if (state != UnitState.Moving)
             return;
         rb.MovePosition(transform.position + moveDirection * stats.speed * Time.fixedDeltaTime);
+    }
+    private void Death()
+    {
+        state = UnitState.Dying;
+        animator.SetTrigger("Death");
+        Destroy(gameObject, 1);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -41,7 +60,17 @@ public class Unit : MonoBehaviour
         {
             if (isFriendly != unit.isFriendly)
             {
-                state = UnitState.Attacking;
+                availableTargets.Add(unit);
+            }
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.TryGetComponent<Unit>(out Unit unit))
+        {
+            if (isFriendly != unit.isFriendly)
+            {
+                availableTargets.Remove(unit);
             }
         }
     }
@@ -51,7 +80,7 @@ public class Unit : MonoBehaviour
         {
             if (isFriendly == unit.isFriendly)
                 return;
-            if(attackTimer >= stats.attackSpeed)
+            if(attackTimer >= stats.attackSpeed && state == UnitState.Attacking)
             {
                 attackTimer = 0;
                 animator.SetTrigger("Attack");
