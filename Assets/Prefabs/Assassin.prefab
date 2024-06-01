@@ -123,6 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFriendly: 0
+  moveDirection: {x: 0, y: 0, z: 0}
 --- !u!50 &2006373404858524008
 Rigidbody2D:
   serializedVersion: 4

@@ -123,6 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< Updated upstream
 --- !u!1001 &512381471
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -188,6 +189,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d82a8f731386f04391b57c0d9a95cff, type: 3}
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1440222104
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,5 +471,8 @@ SceneRoots:
   m_Roots:
   - {fileID: 1440222107}
   - {fileID: 2083199081}
+<<<<<<< Updated upstream
   - {fileID: 2097617739}
   - {fileID: 512381471}
+=======
+>>>>>>> Stashed changes

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4781863768814696778}
   - component: {fileID: 411583862129718826}
   m_Layer: 0
-  m_Name: Idle_1
+  m_Name: FireWizrd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

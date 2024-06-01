@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5633065166349509001}
   - component: {fileID: -1260657920453551396}
   m_Layer: 0
-  m_Name: Shield Skeleton
+  m_Name: Skeleton 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
