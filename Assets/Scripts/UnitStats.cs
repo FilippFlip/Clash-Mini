@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class UnitStats : MonoBehaviour
 {
-    public int maxHP;
-    public int damage;
+    public float maxHP;
+    public float damage;
     public float attackSpeed; 
     public float speed;
     public float lifeTime;
