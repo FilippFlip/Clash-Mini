@@ -210,10 +210,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4025952af2dd05244b4a642dd71745d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 50
-  damage: 20
+  maxHP: 600
+  damage: 60
   attackSpeed: 1
-  speed: 1
+  speed: 3
   lifeTime: 1000
   cost: 0
   manacost: 4
