@@ -11,6 +11,7 @@ public class Unit : MonoBehaviour
     private Animator animator;
     private Rigidbody2D rb;
     private float attackTimer;
+    private Collider2D collider;
     private HashSet<Unit> availableTargets = new HashSet<Unit>(); 
     private void Awake()
     {
@@ -19,6 +20,7 @@ public class Unit : MonoBehaviour
         {
             transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
         }
+        collider = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();    
         animator = GetComponent<Animator>();
         stats = GetComponent<UnitStats>();
@@ -52,6 +54,8 @@ public class Unit : MonoBehaviour
     {
         state = UnitState.Dying;
         animator.SetTrigger("Death");
+        collider.enabled = false;
+        rb.constraints = RigidbodyConstraints2D.FreezeAll;
         Destroy(gameObject, 1);
     }
     private void OnTriggerEnter2D(Collider2D collision)
