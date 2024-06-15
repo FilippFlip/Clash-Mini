@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 845949818422556542}
   - component: {fileID: 5242101217058534293}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: HP Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -116,6 +116,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1606119113761655194, guid: dc4f5ca0395e4c34b947004376940e66, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1606119113761655195, guid: dc4f5ca0395e4c34b947004376940e66, type: 3}
+      propertyPath: m_Color.b
+      value: 0.6753571
+      objectReference: {fileID: 0}
+    - target: {fileID: 1606119113761655195, guid: dc4f5ca0395e4c34b947004376940e66, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1606119113761655195, guid: dc4f5ca0395e4c34b947004376940e66, type: 3}
+      propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1606119113761655195, guid: dc4f5ca0395e4c34b947004376940e66, type: 3}
