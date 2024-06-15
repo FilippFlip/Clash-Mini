@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class UnitFactory : MonoBehaviour
 {
+    public Transform spawnPoint;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +19,7 @@ public class UnitFactory : MonoBehaviour
     }
     public void CreatUnit(Unit unit)
     {
-        Instantiate(unit,transform.position,Quaternion.identity);
+        Instantiate(unit,spawnPoint.position,Quaternion.identity);
     }
+   
 }

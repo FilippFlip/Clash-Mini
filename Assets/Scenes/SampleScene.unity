@@ -3591,8 +3591,8 @@ Transform:
   m_GameObject: {fileID: 969087547}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.89, y: -1.2510805, z: 0.02578551}
-  m_LocalScale: {x: 2.4740307, y: 2.5200415, z: 1}
+  m_LocalPosition: {x: -18.6909, y: -1.052, z: 0.02578551}
+  m_LocalScale: {x: 2.8721023, y: 2.918208, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1038289702}
@@ -4861,8 +4861,8 @@ Transform:
   m_GameObject: {fileID: 1472712903}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.012481, y: -1.3753805, z: 0.02578551}
-  m_LocalScale: {x: 1.9674, y: 1.737, z: 1}
+  m_LocalPosition: {x: -14.9594, y: -1.2692, z: 0.02578551}
+  m_LocalScale: {x: 1.8613291, y: 1.9492884, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1038289702}
@@ -9904,6 +9904,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3007690849262057796, guid: 888e801a76aab524d931760ce41c2ec5, type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 1472712904}
     - target: {fileID: 4870643318439658577, guid: 888e801a76aab524d931760ce41c2ec5, type: 3}
       propertyPath: m_Name
       value: Canvas

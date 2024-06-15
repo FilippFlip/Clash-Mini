@@ -273,7 +273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87bcdfa9067521b4c8e8dabf58710163, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isFriendly: 0
+  isFriendly: 1
   moveDirection: {x: 0, y: 0, z: 0}
 --- !u!114 &4310270636734500306
 MonoBehaviour:
